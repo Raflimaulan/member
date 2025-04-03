@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Ucapan</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb);
+            background-size: 400% 400%;
+            animation: backgroundFade 10s infinite;
+        }
+
+        @keyframes backgroundFade {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            animation: textColorChange 10s infinite;
+        }
+
+        @keyframes textColorChange {
+            0% { color: rgb(255, 255, 255); }
+            25% { color: rgb(255, 255, 255); }
+            50% { color: rgb(0, 0, 255); }
+            75% { color: rgb(38, 0, 255); }
+            100% { color: rgb(255, 255, 255); }
+        }
+
+        .heart {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transform: rotate(-45deg);
+            animation: fadeInOut 3s infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 50px;
+            top: 0;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+
+        .message {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            animation: scrollText 30s linear infinite;
+        }
+
+        @keyframes scrollText {
+            0% { transform: translateY(100%); }
+            100% { transform: translateY(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+    <div class="container">
+        <div class="message">
+            Hai Sayang,<br><br>
+            Aku minta maaf atas semua kesalahan yang telah aku buat. Aku sadar bahwa belakangan ini aku sering kali membuatmu sedih dan kecewa dengan sikap dan perkataanku. Aku benar-benar menyesal karena telah bersikap egois dan kurang menghargai perasaanmu.<br><br>
+            Kamu adalah orang yang sangat berarti bagiku, dan aku sangat menyesal karena telah menyakiti hati kamu. Aku tahu bahwa tindakan dan kata-kataku sering kali tidak pantas, dan aku sangat menyesal karena telah membuatmu merasa tidak dihargai.<br><br>
+            Aku berjanji akan berusaha menjadi pasangan yang lebih baik. Aku akan lebih mendengarkanmu dan berusaha lebih memahami perasaanmu. Aku ingin kita bisa bersama-sama memperbaiki hubungan ini dan kembali seperti dulu lagi.<br><br>
+            Terima kasih atas semua cinta dan kesabaranmu. Aku sangat menghargai setiap momen yang kita habiskan bersama, dan aku berharap kamu bisa memaafkanku dan memberikan kesempatan untuk memperbaiki diri.<br><br>
+            Dengan penuh penyesalan dan cinta,<br><br>
+            [AKU HARAP KITA BISA BAIKAN]
+        </div>
+    </div>
+</body>
+</html>
